@@ -1,0 +1,24 @@
+public class DRoot {
+  public static int digital_root(int n) {
+    while (n>9){
+    char [] c = String.valueOf(n).toCharArray();
+    String[] s = new String[c.length];
+    for(int i = 0; i<s.length; i++){
+      s[i] = String.valueOf(c[i]);
+    }
+    int [] arr = new int[s.length];
+    for(int j = 0; j<s.length; j++){
+      arr[j] = Integer.parseInt(s[j]);
+    }
+      n=0;
+    for(int i = 0; i<arr.length; i++){
+      n += arr[i];
+      }
+      }
+    return n;
+    
+      
+    }
+    
+    }
+  
